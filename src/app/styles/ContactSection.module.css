@@ -1,0 +1,34 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  color: white;
+}
+.container form {
+  width: 500px;
+  padding: 50px;
+  border-radius: 5px;
+  background-color: #1a1919;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container form div {
+  display: flex;
+  flex-direction: column;
+}
+.container form div label {
+  margin-bottom: 10px;
+}
+.container form div input,
+.container form div textarea,
+.container form button {
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+.container form button {
+  margin-top: 10px;
+}

@@ -1,0 +1,33 @@
+.HeaderContainer {
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 200px;
+  background-color: #0f0f0f;
+}
+
+.HeaderContainer h1 {
+  color: white;
+}
+
+.HeaderContainer ul {
+  display: flex;
+  gap: 50px;
+}
+
+.HeaderContainer ul li {
+  color: grey;
+  cursor: pointer;
+  list-style: none;
+}
+
+.HeaderContainer ul li:hover {
+  color: white;
+}
+.HeaderContainer .activeLink {
+  color: white;
+}
