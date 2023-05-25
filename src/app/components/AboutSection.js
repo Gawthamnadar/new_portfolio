@@ -4,7 +4,11 @@ import styles from "../styles/AboutSection.module.css"
 
 const AboutSection = () => {
   return (
-    <section className={styles.container}>
+    <section
+      className={styles.container}
+      id="about-section"
+      data-aos="zoom-in-up"
+    >
       <h1>About Me</h1>
       <div className={styles.sections}>
         <div className={styles.leftSection}>
@@ -14,7 +18,7 @@ const AboutSection = () => {
           <h2>Highest Education :</h2>
           <h4>
             Post Graduate Program in Software Engineering. (Java
-            Specialization), NIIT
+            Specialization), NIIT, Mumbai
           </h4>
           <br />
           <p>

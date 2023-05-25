@@ -20,25 +20,38 @@ const Footer = () => {
             <span className={styles.logo_name}>Gawtham Nadar</span>
           </div>
           <div className={styles[`media-icons`]}>
-            <Link href="#">
+            <Link
+              data-aos="zoom-in"
+              href="https://www.facebook.com/gawtham.nadar/"
+              target={"_blank"}
+            >
               <i>
                 <FaFacebookF />
               </i>
             </Link>
-            <Link href="#">
+            <Link
+              data-aos="zoom-in"
+              href="https://twitter.com/Gawtham_94"
+              target={"_blank"}
+            >
               <i>
                 <FaTwitter />
               </i>
             </Link>
             <Link
-              href="https://www.instagram.com/thapatechnical/"
+              data-aos="zoom-in"
+              href="https://www.instagram.com/aura_geek/"
               target="_blank"
             >
               <i>
                 <FaInstagram />
               </i>
             </Link>
-            <Link href="#">
+            <Link
+              data-aos="zoom-in"
+              href="https://www.linkedin.com/in/gawtham-r-772771145/"
+              target={"_blank"}
+            >
               <i>
                 <FaLinkedinIn />
               </i>

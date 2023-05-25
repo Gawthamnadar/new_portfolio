@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,6 +7,7 @@
   align-items: center;
   gap: 50px;
   color: white;
+  background-color: #1a1919;
 }
 .container h1 {
   font-size: 50px;
@@ -21,13 +22,16 @@
   display: flex;
   gap: 100px;
 }
+.company img {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
 .company text {
   font-weight: lighter;
   font-size: smaller;
 }
 .company p,
 .company ul li {
-  /* font-weight: lighter; */
   font-size: 14px;
 }
 .company ul {

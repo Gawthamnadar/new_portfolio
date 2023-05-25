@@ -11,52 +11,23 @@ import {
   FaJava,
 } from "react-icons/fa"
 import { SiJira, SiNextdotjs } from "react-icons/si"
+import SkillCard from "./SkillCard"
 
 const TechnicalSkills = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="technical-skills-section">
       <h1>Technical Skills</h1>
       <div className={styles.cardContainer}>
-        <div className={styles.card}>
-          <FaReact />
-          <p>React.Js</p>
-        </div>
-        <div className={styles.card}>
-          <SiNextdotjs />
-          <p>Next.Js</p>
-        </div>
-        <div className={styles.card}>
-          <FaJs />
-          <p>JavaScript</p>
-        </div>
-        <div className={styles.card}>
-          <FaNodeJs />
-          <p>Node.Js</p>
-        </div>
-        <div className={styles.card}>
-          <FaAngular />
-          <p>Angular</p>
-        </div>
-        <div className={styles.card}>
-          <FaJava />
-          <p>Java</p>
-        </div>
-        <div className={styles.card}>
-          <FaCss3 />
-          <p>CSS3</p>
-        </div>
-        <div className={styles.card}>
-          <FaHtml5 />
-          <p>HTML5</p>
-        </div>
-        <div className={styles.card}>
-          <SiJira />
-          <p>JIRA</p>
-        </div>
-        <div className={styles.card}>
-          <FaGithub />
-          <p>GitHub</p>
-        </div>
+        <SkillCard iconComponent={<FaReact />} title={"React.Js"} />
+        <SkillCard iconComponent={<SiNextdotjs />} title={"Next.Js"} />
+        <SkillCard iconComponent={<FaJs />} title={"JavaScript"} />
+        <SkillCard iconComponent={<FaNodeJs />} title={"Node.Js"} />
+        <SkillCard iconComponent={<FaAngular />} title={"Angular"} />
+        <SkillCard iconComponent={<FaJava />} title={"Java"} />
+        <SkillCard iconComponent={<FaCss3 />} title={"CSS3"} />
+        <SkillCard iconComponent={<FaHtml5 />} title={"HTML5"} />
+        <SkillCard iconComponent={<SiJira />} title={"JIRA"} />
+        <SkillCard iconComponent={<FaGithub />} title={"GitHub"} />
       </div>
     </section>
   )

@@ -4,10 +4,19 @@ import styles from "../styles/WorkExperienceSection.module.css"
 
 const WorkExperienceSection = () => {
   return (
-    <section className={styles.container}>
+    <section
+      className={styles.container}
+      id="work-experience-section"
+      data-aos="zoom-in-up"
+    >
       <h1>Work Experience</h1>
       <div className={styles.companies}>
-        <div className={styles.company}>
+        <div
+          className={styles.company}
+          data-aos="fade"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <Image src={"/EY.jpg"} alt="ey_logo" width={200} height={200} />
           <div>
             <h2>Senior Technology Consultant at Ernst and Young LLP, Mumbai</h2>
@@ -31,7 +40,12 @@ const WorkExperienceSection = () => {
             </p>
           </div>
         </div>
-        <div className={styles.company}>
+        <div
+          className={styles.company}
+          data-aos="fade"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <Image src={"/AQM.jpg"} alt="aqm_logo" width={200} height={200} />
           <div>
             <h2>Software Developer at AQM Technologies PVT LTD, Mumbai</h2>

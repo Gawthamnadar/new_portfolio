@@ -3,11 +3,17 @@
   padding: 0;
   margin: 0;
 }
-
+*,
+html {
+  scroll-behavior: smooth !important;
+}
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
   background-color: #0f0f0f;
 }
-
+a.active {
+  color: white !important;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}

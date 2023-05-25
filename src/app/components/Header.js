@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React from "react"
 import styles from "../styles/Header.module.css"
 
@@ -6,11 +7,21 @@ const Header = () => {
     <header className={styles.HeaderContainer}>
       <h1>My Portfolio</h1>
       <ul>
-        <li className={styles.activeLink}>Home</li>
-        <li>About</li>
-        <li>Technical Skills</li>
-        <li>Work Experience</li>
-        <li>Contacts</li>
+        <li>
+          <Link href={"#hero-section"}>Home</Link>
+        </li>
+        <li>
+          <Link href={"#about-section"}>About</Link>
+        </li>
+        <li>
+          <Link href={"#technical-skills-section"}>Technical Skills</Link>
+        </li>
+        <li>
+          <Link href={"#work-experience-section"}>Work Experience</Link>
+        </li>
+        <li>
+          <Link href={"#contact-section"}>Contacts</Link>
+        </li>
       </ul>
     </header>
   )

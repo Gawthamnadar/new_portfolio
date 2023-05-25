@@ -3,8 +3,9 @@ import styles from "../styles/ContactSection.module.css"
 
 const ContactSection = () => {
   return (
-    <section className={styles.container}>
-      <form>
+    <section className={styles.container} id="contact-section">
+      <h1>Get In Touch</h1>
+      <form data-aos="fade-up">
         <div>
           <label htmlFor="name">Name</label>
           <input type={"text"} name="name" id="name" />

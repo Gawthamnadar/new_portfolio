@@ -1,23 +1,49 @@
+import { motion } from "framer-motion"
 import Image from "next/image"
 import React from "react"
 import styles from "../styles/HeroSection.module.css"
 
 const HeroSection = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="hero-section">
       <div className={styles.leftSection}>
-        <h2>Hello, It's Me</h2>
-        <h1>Gawtham Nadar</h1>
-        <h2>A Senior Full-Stack Software Developer</h2>
+        <h2 data-aos="zoom-in" data-aos-duration="300">
+          Hello, It's Me
+        </h2>
+        <h1 data-aos="zoom-in" data-aos-duration="600">
+          Gawtham Nadar
+        </h1>
+        <h2 data-aos="zoom-in" data-aos-duration="900">
+          A Senior Full-Stack Software Developer
+        </h2>
         <br />
-        <i>
+        <i data-aos="zoom-right" data-aos-duration="1200">
           “Any fool can write code that a computer can understand. Good
           programmers write code that humans can understand.”
         </i>
         <br />
-        <button>Download My CV</button>
+        <a
+          href="/CV.pdf"
+          target={"_blank"}
+          data-aos="zoom-right"
+          data-aos-duration="1400"
+        >
+          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            View My CV in PDF
+          </motion.button>
+        </a>
+        <a
+          href="/CV.docx"
+          download
+          data-aos="zoom-right"
+          data-aos-duration="1600"
+        >
+          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            Download My CV in Docx
+          </motion.button>
+        </a>
       </div>
-      <div className={styles.rightSection}>
+      <div className={styles.rightSection} data-aos="zoom-in">
         <div className={styles.profileContainer}>
           <Image
             src="/MyImage.png"
