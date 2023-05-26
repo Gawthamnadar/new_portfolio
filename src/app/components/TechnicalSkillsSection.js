@@ -10,7 +10,7 @@ import {
   FaAngular,
   FaJava,
 } from "react-icons/fa"
-import { SiJira, SiNextdotjs } from "react-icons/si"
+import { SiJira, SiNextdotjs, SiTypescript } from "react-icons/si"
 import SkillCard from "./SkillCard"
 
 const TechnicalSkills = () => {
@@ -20,7 +20,7 @@ const TechnicalSkills = () => {
       <div className={styles.cardContainer}>
         <SkillCard iconComponent={<FaReact />} title={"React.Js"} />
         <SkillCard iconComponent={<SiNextdotjs />} title={"Next.Js"} />
-        <SkillCard iconComponent={<FaJs />} title={"JavaScript"} />
+        <SkillCard iconComponent={<SiTypescript />} title={"Typescript"} />
         <SkillCard iconComponent={<FaNodeJs />} title={"Node.Js"} />
         <SkillCard iconComponent={<FaAngular />} title={"Angular"} />
         <SkillCard iconComponent={<FaJava />} title={"Java"} />
